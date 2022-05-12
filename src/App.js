@@ -1,21 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, react } from 'react';
 
-const API_URL = 'http://www.omdbadi.com?apikey=eba88d20';
+// const API_URL = 'http://www.omdbadi.com?apikey=eba88d20';
 
 const App = () => {
 
-  const seachMovies = async (title) => {
-    const response = await fetch(`${API_URL}&s=${title}`);
-    const data = await response.json();
-  }
+  // const searchMovies = async (title) => {
+  //   const response = await fetch(`${API_URL}&s=${title}`);
+  //   const data = await response.json();
 
-  useEffect(() => {
+  //   // console.log(data.Search);
+  // }
 
-
-  }, []);
+  // useEffect(() => {
+  //   // searchMovies('Spiderman');
+  // }, []);
 
   return (
-      <h1>App </h1>
+      <h1>App</h1>
   );
 }
 
